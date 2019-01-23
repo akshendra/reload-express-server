@@ -1,6 +1,6 @@
 
 const path = require('path');
-const debug = require('debug')('');
+const debug = require('debug')('rexs');
 const chokidar = require('chokidar');
 
 const state = {
@@ -99,5 +99,5 @@ module.exports = function reload(opts) {
     });
   }
 
-  return start.app;
+  return state.app;
 };
